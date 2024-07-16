@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "07c6",
+      "nombre": "Cinnamorroll",
+      "precio": "550.00",
+      "imagen": "https://i5.walmartimages.com/asr/bea8d8b5-f670-4a7c-b451-7e197935d85c_1.d2131d5c5f7a45d6be48c37c090d6721.jpeg"
+    },
+    {
+      "id": "be19",
+      "nombre": "Kuromi",
+      "precio": "600.00",
+      "imagen": "https://i.etsystatic.com/25891411/r/il/64c7fc/3058343920/il_1140xN.3058343920_9se4.jpg"
+    },
+    {
+      "id": "e109",
+      "nombre": "Kitty",
+      "precio": "700.00",
+      "imagen": "https://i5.walmartimages.com/asr/61ea205d-c540-4b2c-a7f2-10afb49242ad.ecd7dbdac33148c9dba8e51bf26c83d0.jpeg"
+    }
+  ]
+}

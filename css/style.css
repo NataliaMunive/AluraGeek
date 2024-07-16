@@ -1,0 +1,265 @@
+/*-----------------------------------------------------------------
+    COLORES
+        #333
+        white
+        #545C52
+        #98E2C6
+        #BFEDEF
+        #BBC7CE
+        #C4B7CB 
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+/*------------------------------------------------------------------
+    BODY
+-------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(to right, #98E2C6, #BFEDEF, #BBC7CE, #C4B7CB);
+}
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------------------------------------------------
+    PRODUCTOS-FORMULARIO
+-------------------------------------------------------------------*/
+.productos-formulario {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.productos, .formulario {
+    background-color: rgba(255, 255, 255, 0.61);
+    border: 1px solid 1a1a1a;   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 49.5%;
+}
+
+.productos h1, .formulario h1 {
+    margin-bottom: 20px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mensaje-no-productos {
+    color: #888;
+    text-align: center;
+}
+
+.producto-card {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.producto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-container--info {
+    flex: 1;
+    padding: 10px;
+}
+
+.card-container--info p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-container--value p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-container--value img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.formulario .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Añade espacio entre los botones */
+}
+
+.formulario .button-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1; /* Hacer que los botones ocupen todo el espacio disponible */
+    text-align: center;
+}
+
+.formulario .button-container button:hover {
+    background-color: #555;
+}
+
+
+/*------------------------------------------------------------------
+    SECCION CONTACTO
+-------------------------------------------------------------------*/
+.formcontato {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    display: flex;
+    justify-content: center; 
+    margin: 20px; 
+    border-radius: 8px;
+}
+
+.formcontato__contacto {    
+    width: 100%; 
+    padding: 20px;
+}
+
+.formcontato__text {
+    margin-bottom: 20px;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.formcontato__botao {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+}
+
+.formcontato__botao:hover {
+    background-color: #555;
+}
+
+/*------------------------------------------------------------------
+    FOOTER      
+-------------------------------------------------------------------*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
